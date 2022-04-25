@@ -1,12 +1,15 @@
 package fxutils
 
-type NewStruct struct {
-	param   string
-	baseurl string
-}
+import (
+	"io/ioutil"
+	"log"
+)
 
-// func (ns NewStruct) GetReport(resp *[]byte) *[]byte {
-// o := new(ns)
-// json.Unmarshal(*resp, o)
-// return &o
-// }
+func ReadJsonFile(f string) *[]byte {
+	data, err := ioutil.ReadFile(f)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return &data
+}
