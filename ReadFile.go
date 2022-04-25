@@ -1,4 +1,4 @@
-package utils
+package fxutils
 
 type NewStruct struct {
 	param   string
