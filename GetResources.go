@@ -19,12 +19,10 @@ func GetFXApi[T any](p string) *T {
 
 // Read from local resoruce <json file>
 func GetLocalJson[T any](p string) *[]byte {
-	// mv data,err to package??? is it repeating???
 	data, err := ioutil.ReadFile(p)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	return &data
-
 }
