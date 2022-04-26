@@ -6,6 +6,8 @@ import (
 	"net/http"
 )
 
+// generic not needed
+
 func Response(baseurl string) *[]byte {
 	response, err := http.Get(baseurl)
 	if err != nil {
