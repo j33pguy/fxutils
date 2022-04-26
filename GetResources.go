@@ -6,9 +6,6 @@ import (
 	"log"
 )
 
-// TODO recheck all spelling of files after today.....too many booze<did that on purpose>
-// TODO think about naming for clarity
-
 // Read from foxholeservices warapi
 func GetFXApi[T any](p string) *T {
 	b := Baseurl(p)
